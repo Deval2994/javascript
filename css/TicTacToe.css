@@ -31,7 +31,7 @@ h1{
 #box{
     height: 19vmin;
     width: 19vmin;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border-color: blue;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     font-size: 10vmin;
@@ -41,7 +41,7 @@ h1{
 #x{
     font-family: bold;
     color: red;
-    text-shadow: 0 0 1rem rgba(255, 0, 0, 0.75);;
+    text-shadow: 0 0 1rem rgba(255, 0, 0, 0.75);
 }
 #o{
     font-family: bold;

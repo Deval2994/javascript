@@ -45,7 +45,6 @@ const checkWinner = () => {
             ) {
                 alert(`Player ${boxes[a].innerText} wins!`)
                 display.textContent = `Player ${boxes[a].innerText} wins last round!`;
-                if (boxes[a].innerText === 'O') i = 1
                 resetGame();
                 return;
             }

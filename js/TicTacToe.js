@@ -44,7 +44,6 @@ const checkWinner = () => {
                 boxes[a].innerText === boxes[c].innerText
             ) {
                 alert(`Player ${boxes[a].innerText} wins!`)
-                display.textContent = `Player ${boxes[a].innerText} wins last round!`;
                 resetGame();
                 return;
             }

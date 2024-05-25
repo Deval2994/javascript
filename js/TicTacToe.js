@@ -10,16 +10,20 @@ const patterns = [
 ];
 
 const boxes = document.querySelectorAll(".box");
+const display = document.getElementById("display");
 
 const playGame = () => {
     let i = 1;
     boxes.forEach((box) => {
+        display.textContent = "PLAYER X's TURN"
         box.addEventListener("click", () => {
             if (i % 2 === 0) {
+                display.textContent = "PLAYER X's TURN"
                 box.innerText = "O";
                 box.style.color = "rgb(0, 255, 0)";
                 box.style.textShadow = "0 0 1rem rgba(0, 255, 0, 0.75)";
             } else {
+                display.textContent = "PLAYER O's TURN"
                 box.innerText = "X";
                 box.style.color = "rgb(255, 0, 0)";
                 box.style.textShadow = "0 0 1rem rgba(255, 0, 0, 0.75)";
@@ -39,7 +43,9 @@ const checkWinner = () => {
                 boxes[a].innerText === boxes[b].innerText && 
                 boxes[a].innerText === boxes[c].innerText
             ) {
-                alert(`Player ${boxes[a].innerText} wins!`);
+                alert(`Player ${boxes[a].innerText} wins!`)
+                display.textContent = `Player ${boxes[a].innerText} wins last round!`;
+                if (boxes[a].innerText === 'O') i = 1
                 resetGame();
                 return;
             }

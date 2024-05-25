@@ -1,3 +1,12 @@
+#display{
+    font-family: "Permanant Marker", cursive, bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 1rem rgba(255, 0, 0, 0.75);
+    background-color: hsla(186, 100%, 69%, 1);
+    border-radius: 1rem;
+    text-shadow: black;
+}
+
 body{
     background: hsla(186, 100%, 69%, 1);
     background: linear-gradient(45deg, hsla(186, 100%, 69%, 1) 0%, hsla(152, 100%, 50%, 1) 100%);
@@ -12,6 +21,7 @@ h1{
     text-shadow: rgb(0, 0, 9);
 }
 .container{
+    margin: 10px;
     height: 0vh;
     display: flex;
     flex-wrap: wrap;
@@ -54,11 +64,17 @@ h1{
     width: 20vmin;
 }
 #reset-btn{
+    margin: 20px;
     height: 7vmin;
     width: 20vmin;
-    font-size: 4vmin;
+    border-radius: 1rem;
+    border-color: blue;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    font-size: 5vmin;
+    background-color: rgb(237 251 215);
 }
 #reset-btn:hover{
     height: 6vmin;
     width: 21vmin;
 }
+

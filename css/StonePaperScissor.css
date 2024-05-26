@@ -1,0 +1,43 @@
+body{
+    background: hsla(186, 100%, 69%, 1);
+    background: linear-gradient(45deg, hsla(186, 100%, 69%, 1) 0%, hsla(152, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(186, 100%, 69%, 1) 0%, hsla(152, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(186, 100%, 69%, 1) 0%, hsla(152, 100%, 50%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#60EFFF", endColorstr="#00FF87", GradientType=1 );
+    text-align: center;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    opacity: 0.85;
+}
+img:hover{
+    opacity: 1;
+    height: 102px;
+    width: 102px;
+    border-radius: 51px;
+}
+h1{
+    text-align: center;
+}
+.scoreBoard{
+    font-family:"Permanant Marker", cursive, bold;
+    font-size: large;
+    margin: 30px;
+}
+h3{
+    background-color: rgb(81, 145, 100);
+    color: white;
+    display: inline;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
